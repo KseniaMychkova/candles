@@ -1,16 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 25px;
     font-weight: 500;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Tenor Sans', sans-serif;
-    /*шрифты разные зназначить ищву общий, а для названия свой, после анализа*/
+    font-family: 'Montserrat', sans-serif;
+    /*шрифты разные: для body общий, а для title поставить Tenor Sans*/
     text-align: center;
+}
+
+.wrapper {
+    max-width: 1660px;
+    margin: 0 auto;
+    @media screen and (max-width: px) {
+        width: 100%;
+        padding-right: px;
+        padding-left: px;
+    }
 }
