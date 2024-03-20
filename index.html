@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fff39310f0.js" crossorigin="anonymous"></script>
     <title>Свечи ручной работы</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Tenor+Sans&display=swap" rel="stylesheet">
@@ -23,7 +24,11 @@
                     <li class="menu__list-item"><a href="#candles" class="menu__list-link">Свечи</a></li>
                     <li class="menu__list-item"><a href="#sets" class="menu__list-link">Наборы</a></li>
                     <li class="menu__list-item"><a href="#kashpo" class="menu__list-link">Кашпо</a></li>
-                    <li class="menu__list-item"><a href="@cozy_cat_candles" class="menu__list-link">@cozy_cat_candles</a></li>
+                    <li class="menu__list-item">
+                        <a href="@cozy_cat_candles" class="menu__list-link">
+                            @cozy_cat_candles
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,9 +36,11 @@
     <main>
         <section class="main">
             <div class="wrapper">
-                <h1 class="main__title">Соевые свечи ручной работы</h1>
-                <p class="main__paragraph">Наши свечи в гипсовых и бетонных кашпо уникальные, потому что мы придумали и создали их сами. Вы получаете не только аромасвечу, но и стильный предмет декора для дома.</p>
-                <a class="button" href="@cozy_cat_candles">Перейти в каталог Intagram</a>
+                <div class="main-description">
+                    <h1 class="main-description__title">Соевые свечи ручной работы</h1>
+                    <p class="main-description__paragraph">Наши свечи в гипсовых и бетонных кашпо уникальные, потому что мы придумали и создали их сами. Вы получаете не только аромасвечу, но и стильный предмет декора для дома.</p>
+                    <button class="button" href="@cozy_cat_candles"></button>
+                </div>
                 <div class="main-image">
                     <img src="img/main-image.jpg" alt="Фото свечи в руках">
                 </div>
@@ -41,64 +48,78 @@
         </section>
         <section class="description" id="about-us">
             <div class="wrapper">
-                <div class="image">
+                <div class="description-image">
                     <img src="img/cat-with-candle.jpg" alt="Фото котика">
                 </div>
-                <h2 class="decriptoin__title">О нас</h2>
-                <p class="description__paragraph">Мы - семейная пара из Минска с четырьмя котами :)</p>
-                <p class="description__text">Создаем свечи ручной работы в авторских кашпо.</p>
-                <p class="description__text">Наши свечи - это:</p>
-                <ul class="description__list">
-                    <li class="description__list description__list--item">натуральный соевый воск</li>
-                    <li class="description__list description__list--item">качественные французские ароматы</li>
-                    <li class="description__list description__list--item">деревянный трескучий фитиль</li>
-                    <li class="description__list description__list--item">длинные каминные спички в подарок</li>
-                    <li class="description__list description__list--item">крафтовая упаковка</li>
-                </ul>
-                <article>
-                    <!--не знаю нужно тут отдельно article или можно оставить просто <p>-->
-                    <p class="paragraph">А еще мы всей душой любим животных, поэтому 5% от продажи каждой свечи отдаем волонтёрам для бездомных котиков и собак.</p>
-                </article>
+                <div class="description-main">
+                    <h2 class="decriptoin__title">О нас</h2>
+                    <p class="description__paragraph">Мы - семейная пара из Минска с четырьмя котами :)</p>
+                    <p class="description__text">Создаем свечи ручной работы в авторских кашпо.</p>
+                    <p class="description__text">Наши свечи - это:</p>
+                    <ul class="description__list">
+                        <li class="description__list description__list--item">натуральный соевый воск</li>
+                        <li class="description__list description__list--item">качественные французские ароматы</li>
+                        <li class="description__list description__list--item">деревянный трескучий фитиль</li>
+                        <li class="description__list description__list--item">длинные каминные спички в подарок</li>
+                        <li class="description__list description__list--item">крафтовая упаковка</li>
+                    </ul>
+                    <p class="description__paragraph description__paragraph--bottom">А еще мы всей душой любим животных, поэтому 5% от продажи каждой свечи отдаем волонтёрам для бездомных котиков и собак.</p>
+
+                </div>
             </div>
         </section>
         <section class="candles" id="candles">
             <div class="wrapper">
-                <h3 class="candles__title">Свечи</h3>
-                <p class="candles__text">Мы создаем свечи в авторских кашпо из гипса и бетона. Используем натуральный соевый воск и качественные французские отдушки.</p>
-                <a class="button" href="@cozy_cat_candles">Перейти в каталог Intagram</a>
+                <div class="candles-container">
+                    <div class="candles-description">
+                        <h3 class="candles__title">Свечи</h3>
+                        <p class="candles__text">Мы создаем свечи в авторских кашпо из гипса и бетона. Используем натуральный соевый воск и качественные французские отдушки.</p>
+                    </div>
+                    <button class="button" href="@cozy_cat_candles"></button>
+                </div>
                 <article class="product">
                     <div class="product-card">
                         <h4 class="product-card__title">«Тимофей»</h4>
                         <p class="product-card__text">120 мл</p>
                     </div>
                     <div class="product-gallery">
-                        <div class="product-gallery__image">
-                            <img src="img/terrazzo.jpg" alt="Фото свечи">
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__image">
+                                <img src="img/terrazzo.jpg" alt="Фото свечи">
+                            </div>
+                            <p class="product-gallery__name">Тераццо</p>
                         </div>
-                        <p class="product-gallery__name">Тераццо</p>
-                        <div class="product-gallery__image">
-                            <img src="img/beton.jpg" alt="Фото свечи">
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__image">
+                                <img src="img/beton.jpg" alt="Фото свечи">
+                            </div>
+                            <p class="product-gallery__name">Бетон</p>
                         </div>
-                        <p class="product-gallery__name">Бетон</p>
-                        <div class="product-gallery__image">
-                            <img src="img/marble.jpg" alt="Фото свечи">
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__image">
+                                <img src="img/marble.jpg" alt="Фото свечи">
+                            </div>
+                            <p class="product-gallery__name">Мрамор</p>
                         </div>
-                        <p class="product-gallery__name">Мрамор</p>
-                        <div class="product-gallery__image">
-                            <img src="img/monochrome.jpg" alt="Фото свечи">
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__image">
+                                <img src="img/monochrome.jpg" alt="Фото свечи">
+                            </div>
+                            <p class="product-gallery__name">Монохром</p>
                         </div>
-                        <p class="product-gallery__name">Монохром</p>
                     </div>
                 </article>
             </div>
         </section>
         <section class="sets" id="sets">
             <div class="wrapper">
-                <h3 class="sets__title">Наборы</h3>
-                <p class="sets__paragraph">Свечи ручной работы – теплый подарок для ваших близких. «Ламповый кот» с любовью соберет для вас подарочный набор.</p>
-                <p class="sets__text">В него входят две соевые свечи с разными ароматами. В каждом наборе - специи для лампового глинтвейна, рецепт ароматного приготовления напитка, гипсовая тарелочка-подставка под свечу и маленькая гипсовая копия лампового котика.</p>
-                <a class="button" href="@cozy_cat_candles">Перейти в каталог Intagram</a>
-                <div class="image">
+                <div class="sets-main">
+                    <h3 class="sets-main__title">Наборы</h3>
+                    <p class="sets-main__paragraph">Свечи ручной работы – теплый подарок для ваших близких. «Ламповый кот» с любовью соберет для вас подарочный набор.</p>
+                    <p class="sets-main__text">В него входят две соевые свечи с разными ароматами. В каждом наборе - специи для лампового глинтвейна, рецепт ароматного приготовления напитка, гипсовая тарелочка-подставка под свечу и маленькая гипсовая копия лампового котика.</p>
+                    <button class="button" href="@cozy_cat_candles"></button>
+                </div>
+                <div class="sets-image">
                     <img src="img/set-of-candles.jpg" alt="Фото набора свечей">
                 </div>
             </div>
@@ -106,16 +127,21 @@
         <section class="complement" id="kashpo">
             <div class="wrapper">
                 <div class="complement-gallery">
-                    <div class="complement-gallery__image">
-                        <img src="img/kashpo1.jpg" alt="Фото кашпо">
+                    <div class="complement-gallery-first-container">
+                        <div class="complement-gallery__image">
+                            <img src="img/kashpo1.jpg" alt="Фото кашпо">
+                        </div>
                     </div>
-                    <div class="complement-gallery__image">
-                        <img src="img/kashpo2.jpg" alt="Фото кашпо">
-                    </div>
-                    <div class="complement-gallery__image">
-                        <img src="img/kashpo3.jpg" alt="Фото кашпо">
+                    <div class="complement-gallery-second-container">
+                        <div class="complement-gallery__image">
+                            <img src="img/kashpo2.jpg" alt="Фото кашпо">
+                        </div>
+                        <div class="complement-gallery__image">
+                            <img src="img/kashpo3.jpg" alt="Фото кашпо">
+                        </div>
                     </div>
                 </div>
+
                 <div class="complement-card">
                     <h3 class="complement-card__title">Кашпо</h3>
                     <p class="complement-card__paragraph">Мы создаем кашпо для свечей:</p>
@@ -135,10 +161,12 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="logo">
-                <img src="img/logo.png" alt="Логотип">
+                <img src="img/logo-footer.svg" alt="Логотип">
             </div>
-            <a class="link" href="@cozy_cat_candles">@cozy_cat_candles</a>
-            <!--Здесь нужно вставить qr код с макета - погуглить как вставлять и в какую папку сохранять-->
+            <a class="link" href="@cozy_cat_candles"><i class="fa-brands fa-instagram"></i>@cozy_cat_candles</a>
+            <div class="qr">
+                <img src="img/qrcode.png" alt="QR-код страницы в инстаграме">
+            </div>
         </div>
     </footer>
 

@@ -1,0 +1,26 @@
+@mixin title-style($title-change-color, $title-change-font) {
+    font-weight: 400;
+    line-height: 120%;
+    font-family: "Tenor Sans", sans-serif;
+    text-transform: uppercase;
+    color: $title-change-color;
+    font-size: $title-change-font;
+}
+
+@mixin paragraph-style($paragraph-change-color) {
+    font-size: $main-font;
+    line-height: 120%;
+    font-weight: 600;
+    color: $paragraph-change-color;
+}
+
+@mixin button-style {
+    width: 439px;
+    height: 270px;
+    background-size: cover;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    transition-duration: .5s;
+}

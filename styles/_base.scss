@@ -12,15 +12,27 @@ html {
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     /*шрифты разные: для body общий, а для title поставить Tenor Sans*/
     text-align: center;
+    font-size: $text-font;
+    font-weight: 500;
 }
 
 .wrapper {
     max-width: 1660px;
     margin: 0 auto;
+    padding: 0;
     @media screen and (max-width: px) {
         width: 100%;
         padding-right: px;

@@ -1,0 +1,119 @@
+.complement {
+    background-color: $primary-color;
+    padding-top: 68px;
+    padding-bottom: 87px;
+    .wrapper {
+        display: flex;
+        gap: 89px;
+        .complement-gallery {
+            display: flex;
+            gap: 25px;
+            .complement-gallery-first-container {
+                display: flex;
+                align-items: center;
+                .complement-gallery__image {
+                    max-width: 402px;
+                }
+            }
+            .complement-gallery-second-container {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .complement-gallery__image {
+                    max-width: 402px;
+                }
+            }
+        }
+        .complement-card__list {
+            line-height: 120%;
+            color: $secondary-color;
+            counter-reset: myCounter;
+            .complement-card__list--item {
+                position: relative;
+                left: 15px;
+                top: 30px;
+                list-style-type: none;
+                z-index: 6;
+                &::before {
+                    counter-increment: myCounter;
+                    content: counter(myCounter);
+                    display: inline;
+                    font-size: 1.12rem;
+                    background-image: url(../img/marker.png);
+                    position: relative;
+                    z-index: 2;
+                }
+                &:nth-child(2) {
+                    padding-left: 139px;
+                }
+                &:nth-child(4) {
+                    padding-left: 139px;
+                }
+            }
+            .complement-card__list--item:not(:last-child) {
+                border-bottom: 1px dashed #AB8F84;
+                width: 564px;
+                padding-bottom: 30.5px;
+            }
+            .complement-card__list--item:last-child {
+                margin-bottom: 50px;
+            }
+        }
+        /*.complement-card {
+            text-align: left;
+            .complement-card__title {
+                @include title-style($title-color, 2rem);
+            }
+            .complement-card__paragraph {
+                @include paragraph-style($secondary-color);
+                margin-top: 50px;
+                margin-bottom: 35px;
+            }
+            .complement-card__list {
+                line-height: 120%;
+                color: $secondary-color;
+                .complement-card__list--item {
+                    position: relative;
+                    left: 15px;
+                    transition-duration: .5s;
+                    &::before {
+                        position: relative;
+                        top: 30px;
+                    }
+                    &:nth-child(2) {
+                        padding-left: 139px;
+                    }
+                    &:nth-child(4) {
+                        padding-left: 139px;
+                    }
+                }
+                .complement-card__list--item:first-child:before {
+                    content: url("../img/marker-1.png");
+                }
+                .complement-card__list--item:nth-child(2):before {
+                    content: url("../img/marker-2.png");
+                }
+                .complement-card__list--item:nth-child(3):before {
+                    content: url("../img/marker-3.png");
+                }
+                .complement-card__list--item:last-child:before {
+                    content: url("../img/marker-4.png");
+                }
+                .complement-card__list--item:not(:last-child) {
+                    border-bottom: 1px dashed #AB8F84;
+                    width: 564px;
+                    padding-bottom: 30.5px;
+                }
+                .complement-card__list--item:last-child {
+                    margin-bottom: 50px;
+                }
+            }*/
+        .complement-card__text {
+            line-height: 120%;
+            color: $secondary-color;
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

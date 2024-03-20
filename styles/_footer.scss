@@ -1,0 +1,36 @@
+.footer {
+    padding-top: 41px;
+    padding-bottom: 41px;
+    background-color: $secondary-color;
+    .wrapper {
+        display: flex;
+        max-width: 1178px;
+        justify-content: space-between;
+        color: $secondary-text-color;
+        .link {
+            align-self: center;
+            font-size: $main-font;
+            position: relative;
+            i {
+                background-color: $secondary-text-color;
+                color: $secondary-color;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 30px;
+                display: inline-block;
+                position: relative;
+                right: 20px;
+                top: 15px;
+                &::before {
+                    position: absolute;
+                    top: 25%;
+                    right: 25%;
+                }
+            }
+        }
+        .qr {
+            max-width: 217px;
+        }
+    }
+}

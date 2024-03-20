@@ -1,0 +1,53 @@
+        .main {
+            padding-bottom: 0;
+            padding-top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, $secondary-text-color 56%, $secondary-color 44%);
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1080px;
+                z-index: 1;
+            }
+            .wrapper {
+                display: flex;
+                gap: 23px;
+                padding-bottom: 53px;
+                .main-description {
+                    margin-top: 305px;
+                    text-align: left;
+                    .main-description__title {
+                        @include title-style($title-color, 2.88rem);
+                        max-width: 677px;
+                        margin-left: 0;
+                    }
+                    .main-description__paragraph {
+                        @include paragraph-style($secondary-color);
+                        max-width: 666px;
+                        margin-top: 70px;
+                        margin-bottom: 30px;
+                    }
+                    .button {
+                        @include button-style;
+                        background-image: url('../img/button.svg');
+                        position: relative;
+                        z-index: 7;
+                        &:hover {
+                            background-image: url('../img/button-hover.svg');
+                        }
+                    }
+                }
+                .main-image {
+                    margin-top: 135px;
+                }
+                img {
+                    max-width: 960px;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
