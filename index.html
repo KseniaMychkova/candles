@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fff39310f0.js" crossorigin="anonymous"></script>
     <title>Свечи ручной работы</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
@@ -20,17 +21,15 @@
             </div>
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a href="#about-us" class="menu__list-link">Оo нас</a></li>
-                    <li class="menu__list-item"><a href="#candles" class="menu__list-link">Свечи</a></li>
-                    <li class="menu__list-item"><a href="#sets" class="menu__list-link">Наборы</a></li>
-                    <li class="menu__list-item"><a href="#kashpo" class="menu__list-link">Кашпо</a></li>
-                    <li class="menu__list-item">
-                        <a href="@cozy_cat_candles" class="menu__list-link">
-                            @cozy_cat_candles
-                        </a>
-                    </li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#about-us">О нас</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#candles">Свечи</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#sets">Наборы</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#complement">Кашпо</a></li>
                 </ul>
             </nav>
+            <a class="header__btn" href="@cozy_cat_candles">
+                @cozy_cat_candles
+            </a>
         </div>
     </header>
     <main>
@@ -42,7 +41,7 @@
                     <button class="button" href="@cozy_cat_candles"></button>
                 </div>
                 <div class="main-image">
-                    <img src="img/main-image.jpg" alt="Фото свечи в руках">
+                    <img class="main-image__primary" src="img/main-image.jpg" alt="Фото свечи в руках">
                 </div>
             </div>
         </section>
@@ -52,16 +51,16 @@
                     <img src="img/cat-with-candle.jpg" alt="Фото котика">
                 </div>
                 <div class="description-main">
-                    <h2 class="decriptoin__title">О нас</h2>
+                    <h2>О нас</h2>
                     <p class="description__paragraph">Мы - семейная пара из Минска с четырьмя котами :)</p>
                     <p class="description__text">Создаем свечи ручной работы в авторских кашпо.</p>
-                    <p class="description__text">Наши свечи - это:</p>
+                    <p class="description__list-title">Наши свечи - это:</p>
                     <ul class="description__list">
-                        <li class="description__list description__list--item">натуральный соевый воск</li>
-                        <li class="description__list description__list--item">качественные французские ароматы</li>
-                        <li class="description__list description__list--item">деревянный трескучий фитиль</li>
-                        <li class="description__list description__list--item">длинные каминные спички в подарок</li>
-                        <li class="description__list description__list--item">крафтовая упаковка</li>
+                        <li>натуральный соевый воск</li>
+                        <li>качественные французские ароматы</li>
+                        <li>деревянный трескучий фитиль</li>
+                        <li>длинные каминные спички в подарок</li>
+                        <li>крафтовая упаковка</li>
                     </ul>
                     <p class="description__paragraph description__paragraph--bottom">А еще мы всей душой любим животных, поэтому 5% от продажи каждой свечи отдаем волонтёрам для бездомных котиков и собак.</p>
 
@@ -77,44 +76,244 @@
                     </div>
                     <button class="button" href="@cozy_cat_candles"></button>
                 </div>
-                <article class="product">
-                    <div class="product-card">
-                        <h4 class="product-card__title">«Тимофей»</h4>
-                        <p class="product-card__text">120 мл</p>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Гаврик»</h4>
+                                        <p class="slide-inner__text">120 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider1-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider1-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider1-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider1-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Тимофей»</h4>
+                                        <p class="slide-inner__text">120 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider2-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider2-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider2-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider2-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Софья»</h4>
+                                        <p class="slide-inner__text">210 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider3-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider3-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider3-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider3-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Кэти»</h4>
+                                        <p class="slide-inner__text">120 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider4-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider4-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider4-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider4-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Анфиса»</h4>
+                                        <p class="slide-inner__text">120 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider5-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider5-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider5-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider5-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Мурка»</h4>
+                                        <p class="slide-inner__text">210 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider6-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider6-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider6-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider6-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Нельсон»</h4>
+                                        <p class="slide-inner__text">210 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider7-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider7-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider7-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider7-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-inner">
+                                    <div class="slide-inner__card">
+                                        <h4 class="slide-inner__title">«Полина»</h4>
+                                        <p class="slide-inner__text">90 мл</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider8-1.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Тераццо</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider8-2.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Бетон</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider8-3.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Мрамор</p>
+                                    </div>
+                                    <div class="slide-inner__gallery">
+                                        <img src="img/slider/slider8-4.jpg" alt="фото свечи">
+                                        <p class="slide-inner__name">Монохром</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-gallery">
-                        <div class="product-gallery__item">
-                            <div class="product-gallery__image">
-                                <img src="img/terrazzo.jpg" alt="Фото свечи">
-                            </div>
-                            <p class="product-gallery__name">Тераццо</p>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="container container-arrow">
+                        <div class="swiper-button-prev">
+                            <img src="img/arrow-left.svg" alt="стрелка влево">
                         </div>
-                        <div class="product-gallery__item">
-                            <div class="product-gallery__image">
-                                <img src="img/beton.jpg" alt="Фото свечи">
-                            </div>
-                            <p class="product-gallery__name">Бетон</p>
-                        </div>
-                        <div class="product-gallery__item">
-                            <div class="product-gallery__image">
-                                <img src="img/marble.jpg" alt="Фото свечи">
-                            </div>
-                            <p class="product-gallery__name">Мрамор</p>
-                        </div>
-                        <div class="product-gallery__item">
-                            <div class="product-gallery__image">
-                                <img src="img/monochrome.jpg" alt="Фото свечи">
-                            </div>
-                            <p class="product-gallery__name">Монохром</p>
+                        <div class="swiper-button-next">
+                            <img src="img/arrow-right.svg" alt="стрелка вправо">
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
         <section class="sets" id="sets">
             <div class="wrapper">
                 <div class="sets-main">
-                    <h3 class="sets-main__title">Наборы</h3>
+                    <h3>Наборы</h3>
                     <p class="sets-main__paragraph">Свечи ручной работы – теплый подарок для ваших близких. «Ламповый кот» с любовью соберет для вас подарочный набор.</p>
                     <p class="sets-main__text">В него входят две соевые свечи с разными ароматами. В каждом наборе - специи для лампового глинтвейна, рецепт ароматного приготовления напитка, гипсовая тарелочка-подставка под свечу и маленькая гипсовая копия лампового котика.</p>
                     <button class="button" href="@cozy_cat_candles"></button>
@@ -124,36 +323,35 @@
                 </div>
             </div>
         </section>
-        <section class="complement" id="kashpo">
+        <section class="kashpo" id="complement">
             <div class="wrapper">
-                <div class="complement-gallery">
-                    <div class="complement-gallery-first-container">
-                        <div class="complement-gallery__image">
+                <div class="kashpo-gallery">
+                    <div class="kashpo-gallery__first-container">
+                        <div class="kashpo-gallery__image">
                             <img src="img/kashpo1.jpg" alt="Фото кашпо">
                         </div>
                     </div>
-                    <div class="complement-gallery-second-container">
-                        <div class="complement-gallery__image">
+                    <div class="kashpo-gallery__second-container">
+                        <div class="kashpo-gallery__image">
                             <img src="img/kashpo2.jpg" alt="Фото кашпо">
                         </div>
-                        <div class="complement-gallery__image">
+                        <div class="kashpo-gallery__image">
                             <img src="img/kashpo3.jpg" alt="Фото кашпо">
                         </div>
                     </div>
                 </div>
-
-                <div class="complement-card">
-                    <h3 class="complement-card__title">Кашпо</h3>
-                    <p class="complement-card__paragraph">Мы создаем кашпо для свечей:</p>
-                    <ul class="complement-card__list">
-                        <li class="complement-card__list--item">из гипса и бетона</li>
-                        <li class="complement-card__list--item">восьми разных форм</li>
-                        <li class="complement-card__list--item">в трёх техниках</li>
-                        <li class="complement-card__list--item">во множестве оттенков</li>
+                <div class="kashpo-card">
+                    <h3>Кашпо</h3>
+                    <p class="kashpo-card__paragraph">Мы создаем кашпо для свечей:</p>
+                    <ul class="kashpo-card__list">
+                        <li><span></span>из гипса и бетона</li>
+                        <li><span></span>восьми разных форм</li>
+                        <li><span></span>в трёх техниках</li>
+                        <li><span></span>во множестве оттенков</li>
                     </ul>
-                    <p class="complement-card__text">Большая часть форм придумана и разработана нами от начала до конца. Мы кайфуем от процесса и результата нашей работы и прикипаем душой к каждой свече.</p>
-                    <p class="complement-card__text">Каждая форма кашпо для свечи носит имя котика, который когда-то был бездомным, а потом в его судьбе произошел счастливый перелом.</p>
-                    <p class="complement-card__text">Четверо из них сейчас живут в нашей семье – это черно-белый Гаврик, а также Соня, Поли и Кэти. Еще четверо живут не с нами, но тоже – сытой и счастливой жизнью в любящих семьях :)</p>
+                    <p class="kashpo-card__text">Большая часть форм придумана и разработана нами от начала до конца. Мы кайфуем от процесса и результата нашей работы и прикипаем душой к каждой свече.</p>
+                    <p class="kashpo-card__text">Каждая форма кашпо для свечи носит имя котика, который когда-то был бездомным, а потом в его судьбе произошел счастливый перелом.</p>
+                    <p class="kashpo-card__text">Четверо из них сейчас живут в нашей семье – это черно-белый Гаврик, а также Соня, Поли и Кэти. Еще четверо живут не с нами, но тоже – сытой и счастливой жизнью в любящих семьях :)</p>
                 </div>
             </div>
         </section>
@@ -169,7 +367,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

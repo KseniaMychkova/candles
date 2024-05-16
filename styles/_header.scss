@@ -4,48 +4,68 @@
     background-color: transparent;
     z-index: 2;
     margin-left: 155px;
-    .wrapper {
+    width: 56%;
+    @media screen and (max-width: 516px) {
+        margin-left: 70px;
+    }
+    .menu {
         display: flex;
-        gap: 99px;
-        @media screen and (max-width: 1860px) {
-            gap: 60px;
-        }
-        .menu__list {
+        align-content: center;
+        margin-left: 48px;
+        &__list {
             display: flex;
-            gap: 72px;
-            align-items: flex-end;
-            padding-top: 50px;
+            gap: 70px;
+            flex-wrap: wrap;
+            max-width: 699px;
+            align-items: center;
             position: relative;
-            @media screen and (max-width: 1860px) {
-                gap: 50px;
+            text-transform: uppercase;
+            @media(max-width: 1887px) {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: flex-end;
             }
-            .menu__list-item:not(:last-child) {
-                text-transform: uppercase;
-            }
-            .menu__list-item:last-child::before {
-                content: "";
-                width: 25px;
-                height: 25px;
-                display: inline-block;
-                text-align: end;
-                background-image: url("../icons/instagram.svg");
-                background-repeat: no-repeat;
-                position: relative;
-                right: -10px;
-                top: 11px;
-                @media screen and (max-width: 1860px) {
-                    padding-left: 30px;
-                }
-            }
-            .menu__list-item:last-child {
-                line-height: 120%;
-                position: relative;
-                right: 45px;
-            }
-            .menu__list-link {
+            &-link {
                 color: $title-color;
                 font-size: $small-font;
             }
         }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        color: $title-color;
+        font-size: $small-font;
+        text-transform: none;
+        line-height: 120%;
+        @media(max-width: 720px) {
+            display: none;
+        }
+        &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            text-align: end;
+            background-image: url("../icons/instagram.svg");
+            background-repeat: no-repeat;
+            position: relative;
+            right: -10px;
+            top: 11px;
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    gap: 51px;
+    @media(max-width: 1210px) {
+        gap: 20px;
+    }
+    @media screen and (max-width: 1111px) {
+        gap: 60px;
+    }
+    @media screen and (max-width: 526px) {
+        gap: 40px;
     }
 }

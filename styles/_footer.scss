@@ -1,16 +1,40 @@
 .footer {
-    padding-top: 41px;
-    padding-bottom: 41px;
+    padding: 41px 100px;
     background-color: $secondary-color;
+    @media screen and (max-width: 1024px) {
+        padding: 20px 45px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 15px 25px;
+    }
     .wrapper {
         display: flex;
         max-width: 1178px;
         justify-content: space-between;
         color: $secondary-text-color;
+        margin: 0 auto;
+        @media screen and (max-width: 847px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            @media screen and (max-width: 1024px) {
+                transform: scale(.7);
+            }
+            @media screen and (max-width: 480px) {
+                transform: scale(.5);
+            }
+        }
         .link {
             align-self: center;
             font-size: $main-font;
             position: relative;
+            @media screen and (max-width: 1024px) {
+                font-size: .7rem;
+            }
+            @media screen and (max-width: 480px) {
+                transform: scale(.8);
+            }
             i {
                 background-color: $secondary-text-color;
                 color: $secondary-color;
@@ -24,13 +48,19 @@
                 top: 15px;
                 &::before {
                     position: absolute;
-                    top: 25%;
-                    right: 25%;
+                    top: 20%;
+                    right: 23%;
                 }
             }
         }
         .qr {
             max-width: 217px;
+            @media screen and (max-width: 1024px) {
+                transform: scale(.7);
+            }
+            // @media screen and (max-width: 700px) {
+            //     display: none;
+            // }
         }
     }
 }

@@ -1,0 +1,186 @@
+    .kashpo {
+        background-color: $primary-color;
+        padding-top: 68px;
+        padding-bottom: 87px;
+        position: relative;
+        @media screen and (max-width: 1765px) {
+            padding: 50px;
+        }
+        &:before {
+            content: url("../img/complement-cat.svg");
+            position: absolute;
+            max-width: 519px;
+            top: -212px;
+            left: 155px;
+            z-index: 8;
+            @media screen and (max-width: 1545px) {
+                transform: scale(.65);
+                left: -60px;
+                top: -80px;
+            }
+            @media screen and (max-width: 1111px) {
+                display: none;
+            }
+        }
+        &-gallery {
+            display: flex;
+            gap: 25px;
+            width: 50%;
+            z-index: 2;
+            @media screen and (max-width: 1111px) {
+                flex-direction: column;
+                width: 30%;
+            }
+            @media screen and (max-width: 640px) {
+                display: none;
+            }
+            &__first-container {
+                display: flex;
+                align-self: center;
+                @media screen and (max-width: 1765px) {
+                    display: block;
+                }
+            }
+            img {
+                width: 100%;
+            }
+            &__second-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                @media screen and (max-width: 1111px) {
+                    gap: 25px;
+                }
+            }
+        }
+        &-card {
+            text-align: left;
+            width: 50%;
+            @media screen and (max-width: 1111px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 640px) {
+                width: 100%;
+            }
+            h3 {
+                @include title-style($title-color,
+                2rem);
+            }
+            &__paragraph {
+                @include paragraph-style($secondary-color);
+                margin-top: 50px;
+                margin-bottom: 25px;
+                @media screen and (max-width: 705px) {
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                }
+            }
+            &__list {
+                line-height: 120%;
+                color: $secondary-color;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                @media screen and (max-width: 1560px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 1111px) {
+                    gap: 10px;
+                }
+                li {
+                    position: relative;
+                    list-style-type: none;
+                    box-sizing: content-box;
+                    padding: 10px 0;
+                    background-repeat: no-repeat;
+                    transition-property: all;
+                    transition-duration: .5s;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    border-bottom: 1px dotted #AB8F84;
+                    @media screen and (max-width: 1150px) {
+                        font-size: .7rem;
+                    }
+                    @media screen and (max-width: 455px) {
+                        font-size: $small-font;
+                        gap: 0;
+                    }
+                    & span {
+                        display: block;
+                        width: 120px;
+                        height: 71px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        left: -20px;
+                        justify-content: flex-start;
+                        @media screen and (max-width: 1150px) {
+                            transform: scale(.7);
+                        }
+                        @media screen and (max-width: 455px) {
+                            transform: scale(.5);
+                        }
+                    }
+                    &:first-child span {
+                        background-image: url("../img/marker-1.svg");
+                        &:hover {
+                            background-image: url("../img/marker-1-hover.svg");
+                        }
+                    }
+                    &:nth-child(2) span {
+                        background-image: url("../img/marker-2.svg");
+                        &:hover {
+                            background-image: url("../img/marker-2-hover.svg");
+                        }
+                    }
+                    &:nth-child(3) span {
+                        background-image: url("../img/marker-3.svg");
+                        &:hover {
+                            background-image: url("../img/marker-3-hover.svg");
+                        }
+                    }
+                    &:nth-child(4) span {
+                        background-image: url("../img/marker-4.svg");
+                        &:hover {
+                            background-image: url("../img/marker-4-hover.svg");
+                        }
+                    }
+                    &:nth-child(even) {
+                        justify-content: flex-end;
+                        @media screen and (max-width: 1560px) {
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+            &__text {
+                line-height: 120%;
+                color: $secondary-color;
+                margin-top: 20px;
+                @media screen and (max-width: 1680px) {
+                    font-size: .88rem;
+                }
+                @media screen and (max-width: 1280px) {
+                    font-size: .7rem;
+                }
+                @media screen and (max-width: 705px) {
+                    font-size: .5rem;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                    @media screen and (max-width: 705px) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .wrapper {
+                display: flex;
+                gap: 89px;
+                @media screen and (max-width: 1560px) {
+                    gap: 60px;
+                }
+            }
+        }
+    }

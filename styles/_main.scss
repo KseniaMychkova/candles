@@ -1,53 +1,147 @@
-        .main {
-            padding-bottom: 0;
-            padding-top: 0;
+    .main {
+        padding: 0 130px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, $secondary-text-color 56%, $secondary-color 44%);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, $secondary-text-color 56%, $secondary-color 44%);
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 1080px;
-                z-index: 1;
+            height: 1080px;
+            z-index: 1;
+        }
+        @media screen and (max-width: 1350px) {
+            padding: 0 70px;
+        }
+        @media screen and (max-width: 1111px) {
+            background: linear-gradient(to right, $secondary-text-color 80%, $secondary-color 20%);
+        }
+        @media screen and (max-width: 960px) {
+            background: $secondary-text-color;
+            padding: 0 50px;
+        }
+        &::after {
+            content: url(../img/main-star-bottom.svg);
+            max-width: 201px;
+            position: absolute;
+            top: 944px;
+            right: 5px;
+            @media screen and (max-width: 1780px) {
+                transform: scale(.8);
+                top: 890px;
             }
-            .wrapper {
-                display: flex;
-                gap: 23px;
-                padding-bottom: 53px;
-                .main-description {
-                    margin-top: 305px;
-                    text-align: left;
-                    .main-description__title {
-                        @include title-style($title-color, 2.88rem);
-                        max-width: 677px;
-                        margin-left: 0;
-                    }
-                    .main-description__paragraph {
-                        @include paragraph-style($secondary-color);
-                        max-width: 666px;
-                        margin-top: 70px;
-                        margin-bottom: 30px;
-                    }
-                    .button {
-                        @include button-style;
-                        background-image: url('../img/button.svg');
-                        position: relative;
-                        z-index: 7;
-                        &:hover {
-                            background-image: url('../img/button-hover.svg');
-                        }
-                    }
+            @media screen and (max-width: 1535px) {
+                display: none;
+            }
+        }
+        &-description {
+            margin-top: 305px;
+            text-align: left;
+            @media screen and (max-width: 1370px) {
+                margin-top: 240px;
+            }
+            @media screen and (max-width: 1040px) {
+                width: 100%;
+            }
+            &__title {
+                @include title-style($title-color, 2.88rem);
+                max-width: 677px;
+                margin-left: 0;
+                @media screen and (max-width: 1919px) {
+                    font-size: 2.2rem;
                 }
-                .main-image {
-                    margin-top: 135px;
+                @media screen and (max-width: 1545px) {
+                    font-size: 1.6rem;
                 }
-                img {
-                    max-width: 960px;
-                    width: 100%;
-                    position: relative;
+                @media screen and (max-width: 1040px) {
+                    max-width: 500px;
+                }
+                @media screen and (max-width: 477px) {
+                    font-size: 1.1rem;
+                }
+            }
+            &__paragraph {
+                @include paragraph-style($secondary-color);
+                max-width: 666px;
+                margin-top: 70px;
+                margin-bottom: 30px;
+                @media screen and (max-width: 1445px) {
+                    font-size: $additional-font;
+                }
+                @media screen and (max-width: 1090px) {
+                    max-width: 290px;
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+                @media screen and (max-width: 1040px) {
+                    max-width: 700px;
+                }
+                @media screen and (max-width: 516px) {
+                    font-size: .6rem;
+                }
+            }
+            .button {
+                @include button-style;
+                background-image: url('../img/button.svg');
+                position: relative;
+                z-index: 2;
+                &:hover {
+                    background-image: url('../img/button-hover.svg');
                 }
             }
         }
+        &-image {
+            margin-top: 135px;
+            position: relative;
+            max-width: 960px;
+            @media screen and (max-width: 1370px) {
+                margin-top: 235px;
+            }
+            @media screen and (max-width: 1040px) {
+                display: none;
+            }
+            &::before {
+                content: url('../img/main-star-top.svg');
+                position: absolute;
+                top: -75px;
+                left: 333px;
+                @media screen and (max-width: 1840px) {
+                    left: 220px;
+                    transform: scale(.8);
+                }
+                @media screen and (max-width: 1535px) {
+                    display: none;
+                }
+            }
+            &::after {
+                content: url('../img/main-stars-cats.svg');
+                position: absolute;
+                top: 318px;
+                left: 262px;
+                display: block;
+                max-width: 673px;
+                @media screen and (max-width: 1700px) {
+                    content: url('../img/main-stars-cats-1090.svg');
+                }
+                @media screen and (max-width: 1445px) {
+                    transform: scale(.7);
+                    top: 200px;
+                    left: 150px;
+                }
+                @media screen and (max-width: 1230px) {
+                    display: none;
+                }
+            }
+            &__primary {
+                max-width: 960px;
+                width: 100%;
+            }
+        }
+        .wrapper {
+            display: flex;
+            gap: 23px;
+            padding-bottom: 53px;
+        }
+    }
