@@ -16,7 +16,7 @@ Follow these steps to set up the project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/candles.git
+   git clone https://github.com/KseniaMychkova/candles.git
    cd candles
 
 2. **Open the project:**
@@ -60,6 +60,6 @@ We welcome contributions! Follow these steps to contribute:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 **Contact**
-If you have any questions or suggestions, feel free to reach out at your-email@example.com.
+If you have any questions or suggestions, feel free to reach out at k2606676@gmail.com.
 
 Thank you for visiting Candles! Enjoy exploring our collection.
